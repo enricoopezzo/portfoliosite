@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+
 :root {
   --bg-color: #494646;
   --main-color: #AD6A85;
@@ -7,7 +8,10 @@
 }
 
 body {
-  padding:10px;
+  border:#a34871 solid 10px;
+  height: 100%;
+  margin:10px;
+  padding:20px;
   font-family: 'JetBrains Mono', monospace;
   background-color: var(--bg-color);
   color: var(--main-color);
@@ -15,5 +19,14 @@ body {
 
 a:link, a:visited{
   color: var(--main-color);
+  text-decoration:none;
+  transition-duration: 250ms;
 }
-a:hover{color:var(--main-color-higlight)}
+a:hover, a.active{color:var(--main-color-higlight)}
+
+h1{margin:0;}
+h2{
+  margin-top:0;
+  font-size: 1em;
+}
+
