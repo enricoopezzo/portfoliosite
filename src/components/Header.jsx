@@ -1,21 +1,28 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { BsCollection, BsEnvelope, BsPersonSquare } from 'react-icons/bs'
+import React, { useEffect } from "react";
 
 export const Header = () => {
+  useEffect(() => {
+    const toggle = document.querySelector(".switch input");
+    const handleToggleChange = () => {
+      const element = document.querySelector("html");
+      element.classList.toggle("light");
+    };
+    toggle.addEventListener("change", handleToggleChange);
+    return () => {
+      toggle.removeEventListener("change", handleToggleChange);
+    };
+  }, []);
+
   return (
     <header>
-      <div class="logo">
-        <NavLink to="/" className="nav-link">
-          <h1>enrico opezzo</h1>
-          <h2>front end developer</h2>
-        </NavLink>
-      </div>  
-      <nav>
-        <NavLink to="/projects" className="nav-link"><BsCollection/> Projects</NavLink><br/>
-        <NavLink to="/resume" className="nav-link"><BsPersonSquare/> Resume</NavLink><br/>
-        <NavLink to="/contacts" className="nav-link"><BsEnvelope/> Contacts</NavLink>  
-      </nav>
+        <div className="logo">
+            <h1>enrico opezzo</h1>
+            <h2>front end developer</h2>
+        </div>
+        <label className="switch">
+            <input type="checkbox" />
+            <span className="slider"></span>
+        </label>
     </header>
-  )
-}
+  );
+};

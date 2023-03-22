@@ -1,0 +1,120 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Calculator",
+      "body": "A simple calculator in plain vanilla js. works with mouse pointer or with keyboard.",
+      "demo": "https://www.enricoopezzo.com/calcolatrice/",
+      "code": "https://github.com/enricoopezzo/calcolatrice"
+    },
+    {
+      "id": 2,
+      "title": "Weather App",
+      "body": "A simple app that shows current weather for the searched city. Styled using only bootstrap, without creating any stylesheet.",
+      "demo": "https://www.enricoopezzo.com/weather/",
+      "code": "https://github.com/enricoopezzo/weather"
+    },
+    {
+      "id": 3,
+      "title": "Personal Website",
+      "body": "This website :).",
+      "demo": "",
+      "code": "https://github.com/enricoopezzo/portfoliosite"
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "company": "paul picot",
+      "where": "valenza",
+      "occupation": "watchmaker",
+      "description": "20/01/2023",
+      "years": "2017-2022",
+      "skills": []
+    },
+    {
+      "id": 2,
+      "company": "enrico opezzo",
+      "where": "turin",
+      "occupation": "freelance web designer",
+      "description": "graphic design, web design, web development, art direction",
+      "years": "2017-2022",
+      "skills": [
+        "illustrator",
+        "photoshop",
+        "css",
+        "html",
+        "drupal"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "bellissimo",
+      "where": "turin",
+      "occupation": "graphic designer",
+      "description": "graphic and layout design",
+      "years": "2008",
+      "skills": [
+        "illustrator",
+        "photoshop",
+        "indesign"
+      ]
+    },
+    {
+      "id": 4,
+      "company": "basic.net",
+      "where": "turin",
+      "occupation": "graphic designer",
+      "description": "fashion design at kappa",
+      "years": "2007",
+      "skills": [
+        "illustrator",
+        "photoshop",
+        "freehand"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "school": "politecnico di torino",
+      "where": "turin",
+      "course": "graphic & virtual design",
+      "description": "design school, witha focus on communication design",
+      "graduation": "2013"
+    },
+    {
+      "id": 2,
+      "school": "capac",
+      "where": "milan",
+      "course": "watchmaker",
+      "description": "a watchmaking school",
+      "graduation": "2017"
+    },
+    {
+      "id": 3,
+      "school": "epicode",
+      "where": "online",
+      "course": "front end developer",
+      "description": "class on front end development, with a focus on react, redux and typescript",
+      "graduation": "2023"
+    }
+  ],
+  "bio": [
+    {
+      "name": "enrico opezzo",
+      "birth": 446833085,
+      "occupation": "front end developer",
+      "bio": "I'm a junior front-end developer with a background in graphic and virtual design, as well as watchmaking. I've spent the last five years repairing and servicing luxury watches, and before that, I was creating websites and graphic content for clients as a freelancer.\nNow, I'm excited to apply my web development skills to create engaging and functional web experiences. I'm proficient in HTML, CSS, and JavaScript, and I've worked with React framework to create single page applications. I've got a keen eye for detail and I love creating designs that exceed client expectations.\nI'm currently studying Typescript.",
+      "contacts": {
+        "city": "Turin",
+        "state": "Italy",
+        "phone": "+39 3200110502",
+        "email": "enrico.opezzo@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/enricoopezzo/",
+        "website": "https://www.enricoopezzo.com/",
+        "github": "https://github.com/enricoopezzo"
+      }
+    }
+  ]
+}

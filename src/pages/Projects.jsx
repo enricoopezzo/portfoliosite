@@ -1,15 +1,26 @@
 import React from 'react'
-import { BsCalculator, BsCloudDrizzle, BsListCheck } from 'react-icons/bs'
 
-export const Projects = () => {
+export const Projects = ({ data }) => {
   return (
-    <div>
-      <h3>Projects</h3>
+    <section>
       <ul>
-        <li><a href="https://www.enricoopezzo.com/calcolatrice/"><BsCalculator /> Calculator</a></li>
-        <li><a href="https://www.enricoopezzo.com/weather/"><BsCloudDrizzle /> Weather app</a></li>
-        <li><a href="https://www.enricoopezzo.com/calcolatrice/"><BsListCheck /> Todo list</a></li>
+        {data.projects.map(item => (
+          <li key={item.id}>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+            {item.demo && (
+              <a href={item.demo} target="_blank" rel="noreferrer" className="button-link">Demo</a>
+            )}
+            {item.code && (
+              <a href={item.code} target="_blank" rel="noreferrer" className="button-link">Code</a>
+            )}
+          </li>
+      ))}
       </ul>
-    </div>
+    </section>
+  
   )
 }
+
+
+
