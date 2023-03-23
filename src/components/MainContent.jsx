@@ -6,6 +6,7 @@ import { Resume } from '../pages/Resume';
 import { NavigationMenu } from './NavigationMenu';
 import { HomePage } from '../pages/HomePage';
 import { Sustainability } from '../pages/Sustainability';
+import { NotFound } from '../pages/NotFound';
 
 export const MainContent = () => {
   const [data, setData] = useState([]);
@@ -41,6 +42,7 @@ export const MainContent = () => {
         <Route path="/projects" element={<Projects data={data} />} />
         <Route path="/resume" element={<Resume data={data} />} />
         <Route path="/sustainability" element={<Sustainability data={data} />} />
+        <Route path="*" element={<NotFound />}/>
       </Routes>
     </main>
   );
