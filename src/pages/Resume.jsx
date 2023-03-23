@@ -8,6 +8,8 @@ export const Resume = ({ data }) => {
 
   return (
     <section>
+      <button className="button-link print-button">print cv</button>
+
       <h3 className="high">contacts</h3>
       <address>
         <div>
@@ -25,6 +27,16 @@ export const Resume = ({ data }) => {
           {data.bio[0].contacts.github}
         </div>
       </address>
+      <hr />
+      <h3 className="high">skills</h3>
+      <ul>
+        <li className="skill">Adobe CC</li>
+        <li className="skill">HTML 5</li>
+        <li className="skill">CSS 3</li>
+        <li className="skill">Javascript</li>
+        <li className="skill">React</li>
+        <li className="skill">Typescript</li>
+      </ul>
       <div className="experience">
         <div className="work-experience">
           <h3 className="high">work experience</h3>
@@ -72,9 +84,6 @@ export const Resume = ({ data }) => {
           </ul>
         </div>
       </div>
-      <a href="#" className="button-link print-button">
-        print cv
-      </a>
     </section>
   );
 };

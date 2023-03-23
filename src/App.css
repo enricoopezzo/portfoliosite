@@ -20,7 +20,6 @@ body {
   max-width:960px;
   box-sizing: border-box;
   padding: 20px;
-  /* border:var(--main-color) solid 10px; */
   font-family: 'JetBrains Mono', monospace;
   background-color: var(--bg-color);
   color: var(--main-color);
@@ -47,7 +46,8 @@ h2{
   font-weight: normal;
   font-size: 1em;
 }
-
+h4{margin-bottom:10px;}
+p{margin-top:0;}
 .high{
   color:var(--main-color-higlight);
   text-transform: uppercase;
@@ -98,14 +98,23 @@ footer {
 
 .button-link{
   border: solid 1px var(--main-color);
-  background-color: var(--bg-color);
-  color: var(--main-color-higlight);
+  background-color: transparent;
+  color:var(--main-color);
   border-radius: 5px;
   padding:5px;
   margin-left:10px;
+  margin-bottom:20px;
   cursor:pointer;
+  font-size:1em;
+  font-family: inherit;
+}
+.button-link:hover{
+  color:var(--main-color-higlight)
 }
 /*CV*/
+address{
+  font-style: normal;
+}
 li.skill{
   font-size: 0.8em;
   border: 1px solid var(--main-color);
@@ -188,14 +197,21 @@ input:checked + .slider:before {
     color:  #000 !important;
     background-color: #fff;
   }
-  nav, hr{display: none;}
+  nav, hr, .button-link, .switch{display: none;}
   main section{text-align:left;}
   address, .experience{
     display:flex;
     justify-content: space-between;
   }
-  .experience div{max-width:45%;}
-  .button-link{display: none;}
+  address div, .experience div{width:45%;}
+  li.skill{
+    margin:5px 10px 5px 0;
+    border-color:#000
+  }
+  .logo{
+    color:var(--main-color-higlight)
+  }
+  header{margin-bottom: 0;}
 } 
 
 /*LOADING ANIMATION*/
@@ -224,6 +240,7 @@ input:checked + .slider:before {
   60% {background-position: center}
 }
 /*SUSTAINABILITY*/
+.carbonbadge{margin-top:30px;}
 .carbonbadge span{
   color: var(--main-color)
 }
