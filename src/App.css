@@ -252,3 +252,6 @@ input:checked + .slider:before {
 .carbonbadge a:last-child{
   color: #fff;
 }
+.carbonbadge a, .carbonbadge a:link, .carbonbadge a:visited{
+  text-decoration: none;
+}
