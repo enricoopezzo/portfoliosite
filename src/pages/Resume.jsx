@@ -8,38 +8,70 @@ export const Resume = ({ data }) => {
 
   return (
     <section>
-      <h3>Curriculum Vitae</h3>
-      <h2>{data.bio[0].name}</h2>
+      <h3 className="high">contacts</h3>
       <address>
-        {data.bio[0].contacts.city}, {data.bio[0].contacts.state}
-        <br />
-        {data.bio[0].contacts.email}
-        <br />
-        {data.bio[0].contacts.phone}
-        <br />
+        <div>
+          {data.bio[0].contacts.city}, {data.bio[0].contacts.state}
+          <br />
+          {data.bio[0].contacts.email}
+          <br />
+          {data.bio[0].contacts.phone}
+        </div>
+        <div>
+          {data.bio[0].contacts.website}
+          <br />
+          {data.bio[0].contacts.linkedin}
+          <br />
+          {data.bio[0].contacts.github}
+        </div>
       </address>
-      <h3>work experience</h3>
-      <ul>
-        {data.works.map((work) => (
-          <li key={work.id}>
-            <h4>
-              {work.company},
-              <span>
-                ({work.where}, {work.when})
-              </span>
-            </h4>
-            <p>
-              {work.occupation} <br />
-              {work.description}
-            </p>
-            {work.skills.map((skill) => (
-              <span className="skill" key={skill}>
-                {skill}
-              </span>
+      <div className="experience">
+        <div className="work-experience">
+          <h3 className="high">work experience</h3>
+          <ul>
+            {data.works.map((work) => (
+              <li key={work.id}>
+                <h4>
+                  {work.company.toUpperCase()},
+                  <span>
+                    ({work.where}, {work.when})
+                  </span>
+                </h4>
+                <p>
+                  {work.occupation} <br />
+                  {work.description}
+                </p>
+                {work.skills && (
+                  <ul>
+                    {work.skills.map((skill) => (
+                      <li className="skill" key={skill}>
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <hr />
+              </li>
             ))}
-          </li>
-        ))}
-      </ul>
+          </ul>
+        </div>
+        <div className="education">
+          <h3 className="high">education</h3>
+          <ul>
+            {data.education.map((edu) => (
+              <li key={edu.id}>
+                <h4>
+                  {edu.school.toUpperCase()}({edu.where}, {edu.when})
+                </h4>
+                {edu.course}
+                <br />
+                {edu.description}
+                <hr />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <a href="#" className="button-link print-button">
         print cv
       </a>

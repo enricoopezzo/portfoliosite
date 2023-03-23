@@ -5,6 +5,7 @@ import { Projects } from '../pages/Projects';
 import { Resume } from '../pages/Resume';
 import { NavigationMenu } from './NavigationMenu';
 import { HomePage } from '../pages/HomePage';
+import { Sustainability } from '../pages/Sustainability';
 
 export const MainContent = () => {
   const [data, setData] = useState([]);
@@ -39,6 +40,7 @@ export const MainContent = () => {
         <Route index element={<HomePage data={data} />} />
         <Route path="/projects" element={<Projects data={data} />} />
         <Route path="/resume" element={<Resume data={data} />} />
+        <Route path="/sustainability" element={<Sustainability data={data} />} />
       </Routes>
     </main>
   );

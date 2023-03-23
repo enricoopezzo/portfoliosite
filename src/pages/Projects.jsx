@@ -9,10 +9,10 @@ export const Projects = ({ data }) => {
             <h3>{item.title}</h3>
             <p>{item.body}</p>
             {item.demo && (
-              <a href={item.demo} target="_blank" rel="noreferrer" className="button-link">Demo</a>
+              <a href={item.demo} target="_blank" rel="noreferrer" className="button-link">DEMO</a>
             )}
             {item.code && (
-              <a href={item.code} target="_blank" rel="noreferrer" className="button-link">Code</a>
+              <a href={item.code} target="_blank" rel="noreferrer" className="button-link">CODE</a>
             )}
           </li>
       ))}
