@@ -3,21 +3,21 @@
     {
       "id": 1,
       "title": "Calculator",
-      "body": "A simple calculator in plain vanilla js. works with mouse pointer or with keyboard.",
+      "body": "a simple calculator in plain vanilla js. works with mouse pointer or with keyboard.",
       "demo": "https://www.enricoopezzo.com/calcolatrice/",
       "code": "https://github.com/enricoopezzo/calcolatrice"
     },
     {
       "id": 2,
       "title": "Weather App",
-      "body": "A simple app that shows current weather for the searched city. Styled using only bootstrap, without creating any stylesheet.",
+      "body": "an app that shows current weather for the searched city. styled with bootstrap",
       "demo": "https://www.enricoopezzo.com/weather/",
       "code": "https://github.com/enricoopezzo/weather"
     },
     {
       "id": 3,
       "title": "Personal Website",
-      "body": "This website :).",
+      "body": "this website, a Single Page Application developed with React.",
       "demo": "",
       "code": "https://github.com/enricoopezzo/portfoliosite"
     }
@@ -28,8 +28,8 @@
       "company": "paul picot",
       "where": "valenza",
       "occupation": "watchmaker",
-      "description": "20/01/2023",
-      "years": "2017-2022",
+      "description": "",
+      "when": "2017-2022",
       "skills": []
     },
     {
@@ -38,7 +38,7 @@
       "where": "turin",
       "occupation": "freelance web designer",
       "description": "graphic design, web design, web development, art direction",
-      "years": "2017-2022",
+      "when": "2012-2017",
       "skills": [
         "illustrator",
         "photoshop",
@@ -53,7 +53,7 @@
       "where": "turin",
       "occupation": "graphic designer",
       "description": "graphic and layout design",
-      "years": "2008",
+      "when": "2008",
       "skills": [
         "illustrator",
         "photoshop",
@@ -66,7 +66,7 @@
       "where": "turin",
       "occupation": "graphic designer",
       "description": "fashion design at kappa",
-      "years": "2007",
+      "when": "2007",
       "skills": [
         "illustrator",
         "photoshop",
@@ -77,27 +77,27 @@
   "education": [
     {
       "id": 1,
-      "school": "politecnico di torino",
-      "where": "turin",
-      "course": "graphic & virtual design",
-      "description": "design school, witha focus on communication design",
-      "graduation": "2013"
+      "school": "epicode",
+      "where": "online",
+      "course": "front end developer",
+      "description": "class on front end development, with a focus on react, redux and typescript",
+      "when": "2023"
     },
     {
       "id": 2,
       "school": "capac",
       "where": "milan",
       "course": "watchmaker",
-      "description": "a watchmaking school",
-      "graduation": "2017"
+      "description": "",
+      "when": "2017"
     },
     {
       "id": 3,
-      "school": "epicode",
-      "where": "online",
-      "course": "front end developer",
-      "description": "class on front end development, with a focus on react, redux and typescript",
-      "graduation": "2023"
+      "school": "politecnico di torino",
+      "where": "turin",
+      "course": "graphic & virtual design",
+      "description": "design school, with a focus on communication design",
+      "when": "2013"
     }
   ],
   "bio": [
@@ -105,16 +105,25 @@
       "name": "enrico opezzo",
       "birth": 446833085,
       "occupation": "front end developer",
-      "bio": "I'm a junior front-end developer with a background in graphic and virtual design, as well as watchmaking. I've spent the last five years repairing and servicing luxury watches, and before that, I was creating websites and graphic content for clients as a freelancer.\nNow, I'm excited to apply my web development skills to create engaging and functional web experiences. I'm proficient in HTML, CSS, and JavaScript, and I've worked with React framework to create single page applications. I've got a keen eye for detail and I love creating designs that exceed client expectations.\nI'm currently studying Typescript.",
+      "bio": "As a junior front-end developer with a background in graphic design and watchmaking, I bring a unique perspective to web development. With five years of experience repairing and servicing luxury watches, and prior experience creating websites and graphic content as a freelancer, I'm now excited to apply my skills to create engaging and sustainable web experiences. Proficient in HTML, CSS, and JavaScript, I've utilized the React framework to build single-page applications. Currently, I'm further enhancing my skills and broadening my knowledge through the study of Typescript.",
       "contacts": {
         "city": "Turin",
         "state": "Italy",
-        "phone": "+39 3200110502",
+        "phone": "+39 320 0110502",
         "email": "enrico.opezzo@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/enricoopezzo/",
-        "website": "https://www.enricoopezzo.com/",
-        "github": "https://github.com/enricoopezzo"
-      }
+        "linkedin": "linkedin.com/in/enricoopezzo",
+        "website": "enricoopezzo.com",
+        "github": "github.com/enricoopezzo"
+      },
+      "skills": [
+        "Adobe CC",
+        "CSS 3",
+        "HTML 5",
+        "Javascript",
+        "Bootstrap",
+        "React",
+        "Typescript"
+      ]
     }
   ]
 }

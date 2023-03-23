@@ -30,12 +30,9 @@ export const Resume = ({ data }) => {
       <hr />
       <h3 className="high">skills</h3>
       <ul>
-        <li className="skill">Adobe CC</li>
-        <li className="skill">HTML 5</li>
-        <li className="skill">CSS 3</li>
-        <li className="skill">Javascript</li>
-        <li className="skill">React</li>
-        <li className="skill">Typescript</li>
+        {data.bio[0].skills.map(skill => (
+          <li className="skill">{skill}</li>
+        ))}
       </ul>
       <div className="experience">
         <div className="work-experience">

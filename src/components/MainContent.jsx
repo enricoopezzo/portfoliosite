@@ -17,7 +17,6 @@ export const MainContent = () => {
     axios.get('https://api.npoint.io/4662498929f7db013d0c')
       .then(response => {
         setData(response.data);
-        console.log(response.data)
         setIsLoading(false);
       })
       .catch(error => {
