@@ -32,7 +32,7 @@ body {
 }
 a:link, a:visited{
   color: var(--main-color);
-  text-decoration:none;
+  text-decoration:underline;
   transition-duration: 250ms;
 }
 a:hover, a.active{color:var(--main-color-higlight)}
@@ -69,7 +69,6 @@ header{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-
 }
 
 /*CONTENT*/
@@ -82,6 +81,7 @@ main{
 nav{
   min-width: 150px;
 }
+nav .nav-link{text-decoration: none;}
 main section{
   text-align: right;
 }
@@ -96,7 +96,7 @@ footer {
 
 /*PROJECTS*/
 
-.button-link{
+.button-link, .button-link:link, .button-link:visited{
   border: solid 1px var(--main-color);
   background-color: transparent;
   color:var(--main-color);
@@ -107,6 +107,7 @@ footer {
   cursor:pointer;
   font-size:1em;
   font-family: inherit;
+  text-decoration:none;
 }
 .button-link:hover{
   color:var(--main-color-higlight)
@@ -212,6 +213,10 @@ input:checked + .slider:before {
     color:var(--main-color-higlight)
   }
   header{margin-bottom: 0;}
+  a:link, a:visited{
+    color: #000;
+    text-decoration: none;
+  }
 } 
 
 /*LOADING ANIMATION*/

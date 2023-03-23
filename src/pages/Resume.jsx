@@ -22,9 +22,9 @@ export const Resume = ({ data }) => {
         <div>
           {data.bio[0].contacts.website}
           <br />
-          {data.bio[0].contacts.linkedin}
+          <a href={data.bio[0].contacts.linkedin} target="_blank" rel="noreferrer">{data.bio[0].contacts.linkedin.substring(data.bio[0].contacts.linkedin.indexOf(".") + 1)}</a>
           <br />
-          {data.bio[0].contacts.github}
+          <a href={data.bio[0].contacts.github} target="_blank" rel="noreferrer">{data.bio[0].contacts.github.substring(data.bio[0].contacts.github.indexOf(".") + 1)}</a>
         </div>
       </address>
       <hr />

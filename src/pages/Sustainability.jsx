@@ -76,7 +76,6 @@ export const Sustainability = () => {
       >
         sustainable web design
       </a>
-
       <WebsiteCarbonBadge url="enricoopezzo-com" co2="0.03" percentage="97" />
     </section>
   );
