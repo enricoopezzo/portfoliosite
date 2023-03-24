@@ -41,10 +41,7 @@ export const Resume = ({ data }) => {
             {data.works.map((work) => (
               <li key={work.id}>
                 <h4>
-                  {work.company.toUpperCase()},
-                  <span>
-                    ({work.where}, {work.when})
-                  </span>
+                  {work.company.toUpperCase()}, ({work.where}, {work.when})
                 </h4>
                 <p>
                   {work.occupation} <br />
@@ -70,7 +67,7 @@ export const Resume = ({ data }) => {
             {data.education.map((edu) => (
               <li key={edu.id}>
                 <h4>
-                  {edu.school.toUpperCase()}({edu.where}, {edu.when})
+                  {edu.school.toUpperCase()} ({edu.where}, {edu.when})
                 </h4>
                 {edu.course}
                 <br />
