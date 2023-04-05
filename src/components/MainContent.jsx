@@ -14,15 +14,23 @@ export const MainContent = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const cachedData = localStorage.getItem("data");
+    // check if the response is in local storage
+    if (cachedData) {
+    setData(JSON.parse(cachedData));
+    setIsLoading(false);
+    } else {
     axios.get('https://api.npoint.io/4662498929f7db013d0c')
       .then(response => {
         setData(response.data);
+        localStorage.setItem("data", JSON.stringify(response.data)); // cache the response
         setIsLoading(false);
       })
       .catch(error => {
         setError(error.message);
         setIsLoading(false);
       });
+  }
   }, []);
 
   if (isLoading) {
