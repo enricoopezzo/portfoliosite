@@ -19,7 +19,7 @@ export const Header = () => {
             <h1>enrico opezzo</h1>
             <h2>front end developer</h2>
         </div>
-        <label className="switch">
+        <label className="switch">Theme Switcher
             <input type="checkbox" />
             <span className="slider"></span>
         </label>

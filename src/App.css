@@ -30,28 +30,38 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 a:link, a:visited{
   color: var(--main-color);
   text-decoration:underline;
   transition-duration: 250ms;
 }
+
 a:hover, a.active{color:var(--main-color-higlight)}
 
 h1{
   margin:0;
   font-weight: normal;
 }
+
 h2{
   margin-top:0;
   font-weight: normal;
   font-size: 1em;
 }
+
 h4{margin-bottom:10px;}
-p{margin-top:0;}
+
+p{
+  margin-top:0;
+  white-space: pre-wrap;
+}
+
 .high{
   color:var(--main-color-higlight);
   text-transform: uppercase;
 }
+
 hr{
   border:1px solid var(--main-color-muted);
 }
@@ -78,14 +88,18 @@ main{
   justify-content: space-between;
   flex-grow: 1;
 }
+
 nav{
   min-width: 150px;
 }
+
 nav .nav-link{text-decoration: none;}
+
 main section{
   text-align: right;
   width:100%;
 }
+
 main section ul{
   list-style-type: none;
 }
@@ -110,13 +124,17 @@ footer {
   font-family: inherit;
   text-decoration:none;
 }
+
 .button-link:hover{
   color:var(--main-color-higlight)
 }
+
 /*CV*/
+
 address{
   font-style: normal;
 }
+
 li.skill{
   font-size: 0.8em;
   border: 1px solid var(--main-color);
@@ -132,6 +150,7 @@ li.skill{
   display: inline-block;
   width: 40px;
   height: 20px;
+  color: transparent;
 }
 
 .switch input { 
@@ -191,6 +210,7 @@ input:checked + .slider:before {
   }
 
 }
+
 /*PRINT CV*/
 @media print
 {
@@ -199,6 +219,8 @@ input:checked + .slider:before {
     margin-bottom: 0;
   }
   body  {
+    margin-top: 0;
+    margin-bottom: 0;
     color:  #000 !important;
     background-color: #fff;
   }
@@ -240,12 +262,15 @@ input:checked + .slider:before {
   animation: load 1.2s infinite linear calc(var(--_s,0)*.4s);
   transform: translate(calc(var(--_s,0)*150%));
 }
+
 .loader:before,
 .loader:after {
   content: "";
   grid-area: 1/1;
 }
+
 .loader:before {--_s: -1}
+
 .loader:after  {--_s:  1}
 
 @keyframes load {
@@ -253,14 +278,17 @@ input:checked + .slider:before {
   40% {background-position: bottom}
   60% {background-position: center}
 }
+
 /*SUSTAINABILITY*/
 .carbonbadge{margin-top:30px;}
 .carbonbadge span{
   color: var(--main-color)
 }
+
 .carbonbadge a:last-child{
   color: #fff;
 }
+
 .carbonbadge a, .carbonbadge a:link, .carbonbadge a:visited{
   text-decoration: none;
 }
