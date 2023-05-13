@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --bg-color: #260A1C;
+  --bg-color: #1B0613;
   --main-color: #18D9C5;
   --main-color-muted: #11998B;
-  --main-color-higlight: #F235B0;
+  --main-color-higlight: #F273C8;
 }
 
 .light:root {
-  --bg-color: #c7c7c7;
-  --main-color: #06677d;
+  --bg-color: #f5f5f5;
+  --main-color: #2C5A63;
   --main-color-muted: #39727e;
   --main-color-higlight: #BF045B;
 }
@@ -260,6 +260,9 @@ input:checked + .slider:before {
 }
 .carbonbadge a:last-child{
   color: #fff;
+}
+.carbonbadge a:first-child{
+  color: #0e11a8;
 }
 .carbonbadge a, .carbonbadge a:link, .carbonbadge a:visited{
   text-decoration: none;
