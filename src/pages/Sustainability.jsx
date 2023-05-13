@@ -30,8 +30,8 @@ export const Sustainability = () => {
         <br />
         For this website, I opted for a provider that uses 100% renewable energy
         <sup>[2]</sup> and a default dark theme to optimize users' screen power
-        consumption. We also minimized the use of images and icon fonts to
-        reduce this site's carbon footprint. Additionally, we're compensating
+        consumption. I also avoided the use of images and icon fonts to further
+        reduce this site's carbon footprint. Additionally, I'm compensating
         for CO2 emissions by planting trees with Treedom<sup>[3]</sup>, a
         sustainable reforestation project.
       </p>
