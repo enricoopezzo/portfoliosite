@@ -15,22 +15,29 @@ export const MainContent = () => {
 
   useEffect(() => {
     const cachedData = localStorage.getItem("data");
-    // check if the response is in local storage
-    if (cachedData) {
-    setData(JSON.parse(cachedData));
-    setIsLoading(false);
-    } else {
+    const cachedTime = localStorage.getItem("dataTime");
+    const cacheDuration = 24 * 60 * 60 * 1000;
+    if (cachedData && cachedTime) {
+      const isCacheValid = (new Date().getTime() - cachedTime) < cacheDuration;
+
+      if (isCacheValid) {
+        setData(JSON.parse(cachedData));
+        setIsLoading(false);
+        return; 
+      }
+    }
+
     axios.get('https://api.npoint.io/4662498929f7db013d0c')
       .then(response => {
         setData(response.data);
-        localStorage.setItem("data", JSON.stringify(response.data)); // cache the response
+        localStorage.setItem("data", JSON.stringify(response.data)); 
+        localStorage.setItem("dataTime", new Date().getTime());
         setIsLoading(false);
       })
       .catch(error => {
         setError(error.message);
         setIsLoading(false);
       });
-  }
   }, []);
 
   if (isLoading) {
@@ -49,7 +56,7 @@ export const MainContent = () => {
         <Route path="/projects" element={<Projects data={data} />} />
         <Route path="/resume" element={<Resume data={data} />} />
         <Route path="/sustainability" element={<Sustainability data={data} />} />
-        <Route path="*" element={<NotFound />}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   );
