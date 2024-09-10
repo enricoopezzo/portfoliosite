@@ -42,7 +42,7 @@ export const Sustainability = () => {
           <a
             href="https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             Why your internet habits are not as clean as you think
           </a>
@@ -52,7 +52,8 @@ export const Sustainability = () => {
           <a
             href="https://blog.netsons.com/netsons-hosting-provider-green-sostenibile/"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
+            
           >
             Netsons l’hosting provider green sostenibile
           </a>
@@ -62,7 +63,7 @@ export const Sustainability = () => {
           <a
             href="https://www.treedom.net/it/user/enrico-opezzo/trees"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             treedom
           </a>
@@ -72,7 +73,7 @@ export const Sustainability = () => {
       <a
         href="https://abookapart.com/products/sustainable-web-design"
         target="_blank"
-        rel="noopener"
+        rel="noreferrer"
       >
         sustainable web design
       </a>
