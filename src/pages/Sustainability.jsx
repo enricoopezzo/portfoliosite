@@ -50,11 +50,11 @@ export const Sustainability = () => {
         <li>
           <sup>[2]</sup>
           <a
-            href="https://www.datacenter.it/en/aruba-ecosustainability/green-energy.aspx"
+            href="https://blog.netsons.com/netsons-hosting-provider-green-sostenibile/"
             target="_blank"
             rel="noopener"
           >
-            aruba datacenter
+            Netsons l’hosting provider green sostenibile
           </a>
         </li>
         <li>
